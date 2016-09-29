@@ -24,4 +24,3 @@ def is_sushu(s):
 a = [x for x in range(1, 101)]
 filter(is_sushu, a)
 </pre>
-执行结果还需检查。
