@@ -425,10 +425,12 @@ tcp        0      0 0.0.0.0:1194            0.0.0.0:*               LISTEN      
 配置Client端。
 LINUX 和 windows 各有不同，但无论在什么平台都需要 Client证书和CA证书。（ca.crt , xiao.crt 和 xiao.key）  
 ### WINDOWS CLIENT ###
-先把证书文件和client配置文件复制到 /home/xiao目录下
+先把证书文件和client配置文件复制到 /home/xiao目录下，并修改权限
 <pre>
-#cp xiao.crt xiao.key /home/xiao/
+#cp xiao.crt xiao.key ca.crt /home/xiao/
 #cp /usr/share/doc/openvpn/examples/sample-config-files/client.conf /home/xiao/
+#chown xiao:xiao xiao.*
+#chown xiao:xiao ca.crt
 </pre>
 退出 root用户，回到 xiao 的HOME 目录。使用sz命令下载这几个文件
 <pre>
