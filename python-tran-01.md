@@ -31,7 +31,7 @@ map(test1, ['adam', 'LISA', 'barT'])
 Python提供的sum()函数可以接受一个list并求和，请编写一个prod()函数，可以接受一个list并利用reduce()求积。
 
 <pre>
-def prod(x):
+def prod(s):
     return reduce(lambda x, y: x * y, s)
 prod([2, 3, 4])
 </pre>
